@@ -1,0 +1,17 @@
+group 'pri.holysu.logging'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.8.0-beta2'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.3.0-alpha4'
+    compileOnly 'org.projectlombok:lombok:1.16.20'
+ }
